@@ -135,7 +135,9 @@ Resources:
       ManagedPolicyArns:
         - "arn:aws:iam::aws:policy/AmazonKinesisFirehoseFullAccess"
         - "arn:aws:iam::aws:policy/CloudWatchFullAccess"
-        - "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM"
+        # - "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM"  (to be deprecated - use below)
+        - "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
         Statement:
